@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Success Foresight</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <style></style>
+  </head>
+  <body>
+    <div class="banner">
+      <div class="navbar">
+        <img class="logo" src="{{ url_for('static', filename='logo.jpg') }}" />
+        <ul>
+          <li><a href="{{ url_for('login') }}">Login</a></li>
+          <li><a href="{{ url_for('signup') }}">Signup</a></li>
+          <li><a href="{{ url_for('contact') }}">Contact</a></li>
+          <li><a href="{{ url_for('feedback') }}">Feedback</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <h1>SUCCESS FORESIGHT</h1>
+        <div>
+          <h2>Accelerate Your Business, Exponential Growth Awaits</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Success Foresight</title>
+    <style>
+           body {
+               font-family: Arial, sans-serif;
+               background-color: #FFFFFF;
+               margin: 0;
+               padding: 0;
+               background: url("{{ url_for('static', filename='Prediction bg.jpg') }}") no-repeat center center fixed;; /* Replace 'your-image.jpg' with the path to your image */
+               background-size: cover; /* You can adjust this property to control how the image is displayed */
+               background-repeat: no-repeat; /* This prevents the image from repeating */
+           }
+           h1 {
+               text-align: center;
+               color:#FFFFFF;
+               padding: 20px;
+               margin: 0;
+               font-size: 80px;
+           }
+           .container {
+               max-width: 600px;
+               margin: 0 auto;
+               padding: 20px;
+               
+               box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+               border-radius: 5px;
+               text-align: center;
+               color: #FFFFFF;
+               border: 2px solid ;
+           
+               
+               
+           }
+           form {
+               color: #FFFFFF;
+               margin: 0;
+           }
+           label {
+               display: block;
+               margin: 10px 0;
+               font-weight: bold;
+           }
+           input[type="text"] {
+               width: 90%;
+               padding: 10px;
+               margin: 5px 0;
+               border: 1px solid #FFFFFF;
+               border-radius: 5px;
+               border: 4px solid #000000;
+           }
+           button[type="submit"] {
+               background-color: #00b38f;
+               color: #FFFFFF;
+               padding: 10px 20px;
+               border: none;
+               border-radius: 5px;
+               cursor: pointer;
+               border: 4px solid #000000;
+
+           }
+           button[type="submit"]:hover {
+               background-color: #00b39b;
+
+           }
+           p#result {
+               font-weight: bold;
+           }
+    </style>
+</head>
+<body>
+    <h1><u>Success Foresight </u></h1>
+    <div class="container">
+        <form action="/predict" method="post">
+            <label for="askAmount">Ask Amount(in lakhs)</label>
+            <input type="text" name="askAmount" id="askAmount"required>
+            
+            <label for="equity">Equity</label>
+            <input type="text" name="equity" id="equity"required>
+            
+            <label for="valuationRequested">Valuation Requested</label>
+            <input type="text" name="valuationRequested" id="valuationRequested"required>
+            
+            <label for="businessDescription">Business Description</label>
+            <input type="text" name="businessDescription" id="businessDescription"required>
+            
+            <button type="submit">Predict</button>
+        </form>
+        <p id="result"></p>
+</body>
+</html>

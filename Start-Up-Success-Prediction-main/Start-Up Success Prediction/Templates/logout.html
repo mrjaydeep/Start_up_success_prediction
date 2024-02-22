@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            padding: 20px;
+        }
+        p {
+            text-align: center;
+            color: #555;
+            font-size: 18px;
+        }
+        form {
+            text-align: center;
+            margin: 20px;
+        }
+        button[type="submit"] {
+            background-color: #ff6347;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button[type="submit"]:hover {
+            background-color: #ff4e32;
+        }
+    </style>
+</head>
+<body>
+    <p>Are you sure you want to logout?</p>
+    <form action="/logout1" method="post">
+        <button type="submit">Logout</button>
+    </form>
+</body>
+</html>
